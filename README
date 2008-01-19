@@ -35,6 +35,23 @@ You can install sfMarkdown plugin both via PEAR (recommended) package manager or
  $ symfony cc
  }}}
 
+=== SVN installation ===
+
+[http://trac.symfony-project.com/browser/plugins/sfMarkdownPlugin sfMarkdown plugin source code] is hosted at Symfony SVN repository.
+[http://svnbook.red-bean.com/nightly/en/svn.ref.svn.c.checkout.html Checking out a working copy] is a good idea when you want to contribute to the plugin or you need the latest revision for some reason.
+
+sfMarkdown repository folder follows SVN standard skeleton.
+In the main folder root you can find 3 different subfolders called /trunk, /branches and /tags.
+
+Talking about the purpose of each folder is beyond the scope of this page. If you don't know the meaning of each folder is probably more safe for you to rely on a Manual or PEAR installation.
+
+Just for the sake of completeness you need to know that for each sfMarkdown release, an SVN shapshot is created in the /tag folder called release-X.Y.Z where X.Y.Z corresponds to the plugin version. 
+Each tag will never change its internal state in the future and this makes tags a perfect target for SVN:External links.
+
+/trunk represents the development branch, the most updated (development) version of the plugin.
+This version is not intended to be used in a production environment. It can be buggy, unstable and it may include incompleted code fragments.
+Please download a stable copy either from PEAR or Symfony website if you need the most reliable release, or link your SVN repository to a specific release tag.
+
 
 == Configuration ==
 
