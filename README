@@ -2,9 +2,9 @@
 
 == Overview ==
 
-sfMarkdownPlugin is a Symfony plugin. It allows you to parse and converts text written with Markdown sintax into HTML.
+sfMarkdownPlugin is a Symfony plugin. It allows you to parse and converts text written with Markdown syntax into HTML.
 
-Markdown is a lightweight markup language, originally created by John Gruber and Aaron Swartz, which aims for maximum readability and "publishability" of both its input and output forms, taking many cues from existing conventions for marking up plain text in email.
+Markdown is a lightweight markup language, originally created by John Gruber and Aaron Swartz, which aims for maximum readability and "publish-ability" of both its input and output forms, taking many cues from existing conventions for marking up plain text in email.
 You can find more details about Markdown thanks to [http://en.wikipedia.org/wiki/Markdown Wikipedia] and [http://daringfireball.net/projects/markdown/ John Gruber]. 
 
 == Installation ==
@@ -79,7 +79,7 @@ In the future, not static methods will give you more power while static methods 
 
 For the moment, you just need to remember two methods.
 
- 1. ´sfMarkdown::doConvert($text)´ converts a text to HTML and returns it
+ 1. ´sfMarkdown::doConvert($text)´ converts text to HTML and returns it
  
  2. ´sfMarkdown::doConvertFile($file)´ converts a file to HTML and returns it
 
@@ -155,7 +155,7 @@ For instance, the following code parse and include a Markdown text fragment into
     <?php $string = <<<EOF
     # This is a tile
     
-    And this is a wonderful text paragraph written with **Markdown sintax**.
+    And this is a wonderful text paragraph written with **Markdown syntax**.
     EOF; ?>
     
     <?php include_markdown_text($string); ?>
@@ -166,7 +166,7 @@ Here's the HTML output
 {{{
     <h1>This is a title</h1>
     
-    <p>And this is a wonderful text paragraph written with <strong>Markdown sintax</strong>.</p>
+    <p>And this is a wonderful text paragraph written with <strong>Markdown syntax</strong>.</p>
 }}}
 
 
