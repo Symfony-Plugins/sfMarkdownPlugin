@@ -31,12 +31,16 @@ sfConfig::set(  'sf_markdown_plugin_dir',
 sfConfig::set(  'sf_markdown_parser_lib',
                 sfConfig::get('sf_markdown_plugin_dir').DIRECTORY_SEPARATOR.'lib'.DIRECTORY_SEPARATOR.'markdown.php');
 
+sfConfig::set(  'sf_markdownify_parser_lib',
+                sfConfig::get('sf_markdown_plugin_dir').DIRECTORY_SEPARATOR.'lib'.DIRECTORY_SEPARATOR.'markdownify'.DIRECTORY_SEPARATOR.'markdownify_extra.php');
+
 // Markdown parser name
 // Useful to switch between multiple parsers, if you can choose
 // For example default PHP Markdown parser library provides a classic parser called Mardown_Parser
 // and an extra parser called MardownExtra_Parser
 sfConfig::set(  'sf_markdown_parser', 'MarkdownExtra_Parser');
 
+sfConfig::set(  'sf_markdownify_parser', 'Markdownify_Extra');
 
 /*
  * Local variables:
